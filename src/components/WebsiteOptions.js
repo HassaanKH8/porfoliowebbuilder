@@ -3,11 +3,11 @@ import '../App.css'
 
 const WebsiteOptions = ({ webOptions, setWebOptions, setWOSubmitted, setSkillsSubmited }) => {
 
-    const [color, setColor] = useState(webOptions.backgroundColor || "#efeee9")
-    const [ncolor, setNColor] = useState(webOptions.backgroundColor || "#1d2225")
-    const [pcolor, setPColor] = useState(webOptions.primarytextColor || "#1c1c1c")
-    const [scolor, setSColor] = useState(webOptions.secondarytextColor || "#dedede")
-    const [acolor, setAColor] = useState(webOptions.accentColor || "#c9f07f")
+    const [color, setColor] = useState(webOptions.backgroundColor || "#404040")
+    const [ncolor, setNColor] = useState(webOptions.backgroundColor || "#2b2b2b")
+    const [pcolor, setPColor] = useState(webOptions.primarytextColor || "#e6e6e6")
+    const [scolor, setSColor] = useState(webOptions.secondarytextColor || "#ffffff")
+    const [acolor, setAColor] = useState(webOptions.accentColor || "#d6f49f")
 
     const handleSubmit = (e) => {
         e.preventDefault()
