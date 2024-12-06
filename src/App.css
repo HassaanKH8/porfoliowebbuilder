@@ -1,38 +1,229 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.page {
+  height: 100vh;
+  width: 100%;
+  background-color: #efeee9;
+  overflow-y: scroll;
+}
+
+.navbar {
+  height: 80px;
+  width: 100%;
+  background-color: #36454f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  font-size: 36px;
+  font-family: "EB Garamond";
+  font-weight: 600;
+  color: #efeee9;
+}
+
+.bottomsection {
+  height: calc(100vh-80px);
+  width: 100%;
+}
+
+.personalinfoheading {
   text-align: center;
+  font-size: 36px;
+  font-family: "EB Garamond";
+  font-weight: 500;
+  color: #36454f;
+  margin-bottom: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.entrydiv {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  width: 350px;
+  justify-self: center;
+}
+
+.entrylabel {
+  font-size: 20px;
+  font-family: "EB Garamond";
+  font-weight: 500;
+  color: #36454f;
+  margin-top: 10px;
+  margin-bottom: 2px;
+}
+
+.entrylabel2s {
+  font-size: 16px;
+  font-family: "EB Garamond";
+  font-weight: 500;
+  color: #36454f;
+  margin-top: 15px;
+  margin-bottom: 2px;
+}
+
+.entryinput {
+  padding: 10px 15px;
+  font-size: 20px;
+  background-color: #36454f;
+  color: #efeee9;
+  border: none;
+  border-radius: 12px;
+  font-family: "EB Garamond";
+  font-weight: 400;
+}
+
+.entryinput::placeholder {
+  color: #afafaf;
+}
+
+.submitbtn {
+  background-color: #36454f;
+  color: #efeee9;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-family: "EB Garamond";
+  font-weight: 500;
+  align-self: center;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-bottom: 20px;
+}
+
+.submitbtn:hover {
+  color: #36454f;
+  background-color: #afafaf;
+}
+
+
+.skill-entry {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+}
+
+.submitbtn2 {
+  background-color: #36454f;
+  color: #efeee9;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-family: "EB Garamond";
+  font-weight: 400;
+  align-self: center;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.submitbtn2:hover {
+  color: #36454f;
+  background-color: #afafaf;
+}
+
+
+
+
+.colorinput {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 80px;
+  height: 30px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.colorinput::-webkit-color-swatch-wrapper {
+  padding: 0;
+  border: none;
+}
+
+.colorinput::-webkit-color-swatch {
+  border-radius: 0px;
+  border: none;
+}
+
+.colorText {
+  color: #efeee9;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-right: 10px;
+}
+
+
+.bottomsectionportfolio {
+  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 100px;
+  height: calc(100vh - 80px);
+  padding-bottom: 80px;
 }
 
-.App-link {
-  color: #61dafb;
+.aboutSectionPortfolio {
+  height: 100vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.skillsSectionPortfolio {
+  height: 100vh;
+}
+
+.skilltext {
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.contactSectionPortfolio {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .bottomsectionportfolio {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    height: calc(100vh - 80px);
+    padding-bottom: 80px;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media (max-width: 470px) {
+  .bottomsectionportfolio {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    height: calc(100vh - 80px);
+    padding-bottom: 80px;
   }
+}
+
+#about {
+  overflow-y: scroll;
+}
+
+#skills {
+  overflow-y: scroll;
 }
